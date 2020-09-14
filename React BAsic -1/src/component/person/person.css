@@ -1,0 +1,8 @@
+.my-background{
+    background:pink;
+}
+.my-background:hover{
+    background:blue;
+}
+
+
