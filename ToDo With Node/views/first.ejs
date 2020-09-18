@@ -1,0 +1,26 @@
+<%-include('includes/header')-%>
+<form method="POST" action="/">
+    <div class="row mt-5 justify-content-center">
+
+
+        <div class="col-md-4">
+
+    <div class="bg-primary text-white text-center mb-2 p-1 rounded shadow-sm"><h3><%=date%></h3></div>
+    <input type="text" name="todo" placeholder="Write" class="form-control">
+    <button class="btn btn-primary w-100 mt-2">Submit</button>
+    
+        <ul class="list-group">
+       <%  items.forEach((item)=>{ %>
+        <li class="list-group-item"> <%=item %></li>
+
+        <%  }) %>
+
+            
+            
+          </ul>
+        
+    
+</div>
+</div>
+</form> 
+<%-include('includes/footer')-%>

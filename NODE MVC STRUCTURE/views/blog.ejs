@@ -1,0 +1,28 @@
+<%- include('./header') -%>
+
+
+
+
+<h1>BloG</h1>
+
+<% items.forEach(item=>{ %>
+    <div class="shadow my-width my-margin border border-primary mt-1 p-2">
+        <h2><%=item.Blog1 %></h2>
+        <h2><%=item.Blog2 %></h2>
+        <h2><%=item.Blog3 %></h2>
+
+        <a href="/blog/<%=item.key %>" class="btn btn-outline-dark">Details</a>
+    </div>
+
+
+    <%})%>
+
+
+
+
+
+
+
+
+
+<%- include('./footer') -%>
